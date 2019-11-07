@@ -11,7 +11,7 @@ html {
 }
 
 header{
-    padding: 1em;
+    margin:0
 }
 *{
     box-sizing: border-box;
@@ -47,4 +47,12 @@ h2{
 
 footer{
     margin-top: 5em;
+}
+a img{
+    width: 4em;
+
+}
+a img:hover{
+    transform: scale(1.1,1.1);
+    transition: 0.2s;
 }
