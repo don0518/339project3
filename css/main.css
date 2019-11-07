@@ -1,0 +1,645 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+* {
+  box-sizing:border-box;
+  padding:0;
+  margin:0;
+  /* display:block; */
+}
+/* .body_elements{
+  margin-left:3rem;
+  margin-right:3rem;
+} */
+footer{
+  overflow: hidden;
+  /* background-color: #f1f1f1; */
+  border-top: solid 1px #CACACA;
+  /* padding: 20px 10px; */
+  /* margin: -3rem -9999rem;
+  margin-top: 5rem; */
+  /* add back negative margin value */
+  /* padding: 2rem 9999rem;
+  padding-top:-100rem; */
+  /* background-color:#CACACA; */
+  text-align:center;
+  font-size:1rem;
+  
+}
+footer ul{
+  list-style-type: none;
+
+}
+
+footer a {
+  color: dodgerblue;
+  font-family: helvetica;
+  text-decoration: none;
+  font-weight:bold;
+}
+footer a:hover{
+  color: red;
+  text-decoration: underline;
+}
+footer a:focus{
+  background-color: dodgerblue;
+  color: white;
+}
+
+footer li{
+  margin-bottom:3rem;
+  margin-top:1rem;
+}
+#citations h2{
+  font-size:1.5rem;
+}
+header{
+  overflow: hidden;
+  /* background-color: #f1f1f1; */
+  /* border: solid 1px #CACACA; */
+  /* padding: 20px 10px; */
+  /* margin: -3rem -9999rem;
+  margin-bottom: 1rem; */
+  /* add back negative margin value */
+  /* padding: 2rem 9999rem;
+  padding-bottom: 1rem; */
+  margin-bottom: 7rem;
+}
+/* Style the header links */
+header a {
+  font-family: 'Source Sans Pro', sans-serif;
+
+  float: left;
+  color: #7D7D7D;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+header a:hover {
+  /* background-color: #ddd; */
+  color: black;
+}
+/* header a:active {
+  background-color: dodgerblue;
+  color: white;
+} */
+.header-right {
+  float: right;
+}
+#logo{
+  font-family: 'El Messiri', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+@media screen and (max-width: 500px) {
+  header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 2rem;
+}
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: #CACACA;
+  /* margin: 0rem -9999rem;
+  margin-bottom: 1rem; */
+  /* add back negative margin value */
+  /* padding: 2rem 9999rem;
+  padding-bottom: 1rem; */
+  
+}
+
+h2 {
+  margin-top: 2rem;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+h3 {
+  /* font-style: italic; */
+  margin-top: 1rem;
+  margin-bottom:1rem;
+  font-size:1.5rem;
+  font-weight: 400;
+  text-decoration: underline;
+  color:red;
+  font-weight:900;
+  margin-bottom:2em;
+}
+
+h4 {
+  margin-bottom: 0.25rem;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+p {
+  margin-top: 0;
+  font-family: "Muli", sans-serif;
+
+}
+img{ 
+  width:500px;
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+code {
+  padding: 0.5rem;
+  display: block;
+  margin-top:10em;
+  font-size:1rem;
+  max-width:30%;
+  width:100%;
+
+
+}
+
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+/* style for in text link */
+#in_text_link {
+  color: dodgerblue;
+  font-family: helvetica;
+  text-decoration: none;
+  font-weight:bold;
+}
+#in_text_link:hover{
+  color: red;
+  text-decoration: underline;
+}
+#in_text_link:active{
+  background-color: dodgerblue;
+  color: white;
+}
+/* style for navigation */
+#nav_link{
+  background-color: white;
+
+
+}
+#nav_link a {
+  font-family: 'Source Sans Pro', sans-serif;
+
+  float: left;
+  color: #7D7D7D;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+
+
+}
+#nav_link  a:hover {
+  color: black;
+}
+#nav_link a:active {
+  background-color: dodgerblue;
+  color: white;
+}
+/* Styling for the navigation button */
+.button-nav {
+  display: inline-block;
+  padding: 0.5rem;
+  color: white;
+  background-color: rgb(50,50,50);
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: rgb(200,200,200);
+}
+
+/* styling for the button */
+button {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  /* max-width:100%; */
+  color: black;
+  padding: 1rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2rem;
+  border-radius: 8px;
+  /* border: solid 0.5px black; */
+
+  display:block;
+
+
+}
+button:hover{
+  background-color: black; 
+  color: white;
+}
+button:focus{
+  background-color: dodgerblue; 
+  box-shadow: none;
+
+}
+
+/* Styling for text input */
+input[type=text]{
+  width:30%;
+  border:2px solid #aaa;
+  border-radius:4px;
+  margin:8px 0;
+  outline:none;
+  padding:8px;
+  box-sizing:border-box;
+  transition:.3s;
+  
+}
+input[type=text]:hover{
+  border-color:rgb(183, 215, 247);
+  box-shadow:0 0 8px 0 dodgerBlue;
+}
+input[type=text]:focus{
+  border-color:#1e90ff;
+  box-shadow:0 0 8px 0 dodgerBlue;
+}
+
+/* styling for radio button */
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:hover + label:before{
+  background:rgb(30, 144, 255, 0.2);
+  
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: dodgerBlue;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    /* -webkit-transition: all 0.2s ease; */
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    /* -webkit-transform: scale(0); */
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    /* -webkit-transform: scale(1); */
+    transform: scale(1);
+}
+
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+/* style headings */
+.headings h1, .headings h2, .headings h3, .headings h4{
+  font-family: 'Source Sans Pro', sans-serif;
+
+
+  font-size:10px;
+}
+.headings h1{
+  font-size: 5rem;
+  font-weight: 800;
+}
+.headings h2{
+  font-size: 4rem;
+  font-weight: 600;
+  margin-top: 0em;
+}
+.headings h3{
+  font-size: 3rem;
+  font-weight: 400;
+  color:black;
+  text-decoration: none;
+  margin-bottom: 0.5em;
+}
+.headings h4{
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+/* style number list */
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ol li {
+  counter-increment: step-counter;
+  margin-bottom: 10px;
+}
+
+ol li::before {
+  content: counter(step-counter);
+  margin-right: 5px;
+  font-size: 80%;
+  border:solid 0.5px black;
+  border-right:none;
+  border-left:none;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  padding: 3px 8px;
+  /* border-radius: 5px; */
+}
+
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+/* styling main Navigation */
+
+/* Style the header links */
+#main_nav_link a {
+  font-family: 'Source Sans Pro', sans-serif;
+
+  float: left;
+  color: #7D7D7D;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+#main_nav_link a:hover {
+  /* background-color: #ddd; */
+  color: black;
+}
+
+/* style product list */
+.product_list{
+  /* border: solid #CACACA 5px; */
+  /* border-radius: 20px; */
+  /* change the alignment */
+  display: flex;
+  max-width:100%;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.figure1{
+  flex:0 50%;
+  background: #F6F6F6;
+  border: 0.5px black solid;
+  border-radius: 10px;
+}
+.figure2{
+  background:#F6F6F6;
+  flex:0 50%;
+  border: 0.5px black solid;
+  border-radius: 10px;
+}
+.figure3{
+  flex:0 50%;
+  background: #F6F6F6;
+  border: 0.5px black solid;
+  border-radius: 10px;
+}
+.figure4{
+  background:#F6F6F6;
+  flex:0 50%;
+  border: 0.5px black solid;
+  border-radius: 10px;
+}
+@media screen and (max-width: 500px) {
+  .figure1, .figure2, .figure3, .figure4{
+    flex:0 100%;
+  }
+}
+  .product_list figure{
+  margin:3rem;
+  min-width:50%;
+}
+.product_list figcaption, .product_list a{
+  text-align: center;
+
+}
+.product_list span{
+  font-size: 1.2rem;
+}
+.product_list a{
+color: dodgerblue;
+font-family: helvetica;
+text-decoration: none;
+font-weight:bold;
+font-size: 3vw;
+}
+.product_list a:hover{
+  color: red;
+  text-decoration: underline;
+}
+.product_list a:active{
+  background-color: #1e90ff;
+  color: white;
+}
+figure a:hover{
+  color: red;
+  background-color: #1e90ff;
+
+  /* text-decoration: underline; */
+}
+
+/* style payment form */
+#text_input_payment{
+  max-width: 416px;
+  border: solid whitesmoke 2rem;
+  padding: 10px;
+  background-color:rgb(237, 237, 237);
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items:center;
+
+}
+@media screen and (max-width: 273px) {
+  .checkout {
+    width:100%;
+  }
+}
+#text_input_payment button{
+  font-size: 1rem;
+}
+#text_input_payment [type=text]{
+  width:100%;
+}
+/* #text_input_payment button{
+  margin-top: 2rem;
+  
+} */
+.pay_radio{
+  margin-bottom:2rem;
+}
+
+/* style checkout */
+.checkout{
+  border: solid whitesmoke 2rem;
+  border-radius: 20px;
+  background: #F6F6F6;
+
+  max-width:500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+
+}
+@media screen and (max-width: 558px) {
+  .checkout {
+    width:100%;
+  }
+}
+
+.checkout_item1{
+  flex:1;
+  text-align: center;
+}
+.checkout_item2{
+  flex:1;
+  text-align: center;
+
+}
+.total_checkout{
+  flex:2;
+  
+  margin-top:5rem;
+}
+
+
+.checkout a{
+  color: dodgerblue;
+  font-family: helvetica;
+  text-decoration: none;
+  font-weight:bold;
+}
+.checkout img{
+  margin-top:1rem;
+}
+.checkout figcaption{
+  font-size: 2rem;
+
+}
+.checkout p{
+  /* padding:3em; */
+  font-size: 2rem;
+  border-top:solid white 10px
+
+}
+.checkout_button{
+
+  /* text-align: center; */
+  padding:3em;
+  font-size:1rem;
+  border-radius:10px;
+}
+
+.grey{
+  color:#CACACA;
+  font-weight: bold;
+}
+.dodgerblue{
+  color:dodgerblue;
+  font-weight: bold;
+
+}
+.red{
+  color:red;
+  font-weight: bold;
+
+}
+.color_names, .font_names{
+  list-style-type: none;
+}
+.information h4{
+  font-size:1.5rem;
+}
+.font1{
+  font-family: "Muli", sans-serif;
+}
+.font2{
+  font-family: 'Roboto', sans-serif;
+}
+.font3{
+  font-family: 'El Messiri', sans-serif;
+}
+.font4{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.font5{
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.final_checkout{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content:flex-start;
+}
