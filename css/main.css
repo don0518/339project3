@@ -64,7 +64,7 @@ header{
   /* add back negative margin value */
   /* padding: 2rem 9999rem;
   padding-bottom: 1rem; */
-  margin-bottom: 7rem;
+  margin-bottom: 3rem;
 }
 /* Style the header links */
 header a {
@@ -107,11 +107,19 @@ header a:hover {
     float: none;
   }
 }
-
+html {
+  width: 100%;
+  min-height: 100%;
+  padding:0
+}
 
 body {
   font-family: 'Roboto', sans-serif;
   padding: 2rem;
+  margin-left: 0;
+    margin-right: 0;
+
+  
 }
 
 .element {
@@ -238,109 +246,9 @@ code {
   background-color: rgb(200,200,200);
 }
 
-/* styling for the button */
-button {
-  font-family: 'Alegreya Sans SC', sans-serif;
-  /* max-width:100%; */
-  color: black;
-  padding: 1rem 1rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 2rem;
-  border-radius: 8px;
-  /* border: solid 0.5px black; */
-
-  display:block;
 
 
-}
-button:hover{
-  background-color: black; 
-  color: white;
-}
-button:focus{
-  background-color: dodgerblue; 
-  box-shadow: none;
 
-}
-
-/* Styling for text input */
-input[type=text]{
-  width:30%;
-  border:2px solid #aaa;
-  border-radius:4px;
-  margin:8px 0;
-  outline:none;
-  padding:8px;
-  box-sizing:border-box;
-  transition:.3s;
-  
-}
-input[type=text]:hover{
-  border-color:rgb(183, 215, 247);
-  box-shadow:0 0 8px 0 dodgerBlue;
-}
-input[type=text]:focus{
-  border-color:#1e90ff;
-  box-shadow:0 0 8px 0 dodgerBlue;
-}
-
-/* styling for radio button */
-[type="radio"]:checked,
-[type="radio"]:not(:checked) {
-    position: absolute;
-    left: -9999px;
-}
-[type="radio"]:checked + label,
-[type="radio"]:not(:checked) + label
-{
-    position: relative;
-    padding-left: 28px;
-    cursor: pointer;
-    line-height: 20px;
-    display: inline-block;
-    color: #666;
-}
-[type="radio"]:checked + label:before,
-[type="radio"]:not(:checked) + label:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 18px;
-    height: 18px;
-    border: 1px solid #ddd;
-    border-radius: 100%;
-    background: #fff;
-}
-[type="radio"]:hover + label:before{
-  background:rgb(30, 144, 255, 0.2);
-  
-}
-[type="radio"]:checked + label:after,
-[type="radio"]:not(:checked) + label:after {
-    content: '';
-    width: 12px;
-    height: 12px;
-    background: dodgerBlue;
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    border-radius: 100%;
-    /* -webkit-transition: all 0.2s ease; */
-    transition: all 0.2s ease;
-}
-[type="radio"]:not(:checked) + label:after {
-    opacity: 0;
-    /* -webkit-transform: scale(0); */
-    transform: scale(0);
-}
-[type="radio"]:checked + label:after {
-    opacity: 1;
-    /* -webkit-transform: scale(1); */
-    transform: scale(1);
-}
 
 
 /* 
@@ -424,177 +332,7 @@ ol li::before {
   color: black;
 }
 
-/* style product list */
-.product_list{
-  /* border: solid #CACACA 5px; */
-  /* border-radius: 20px; */
-  /* change the alignment */
-  display: flex;
-  max-width:100%;
-  justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-}
-.figure1{
-  flex:0 50%;
-  background: #F6F6F6;
-  border: 0.5px black solid;
-  border-radius: 10px;
-}
-.figure2{
-  background:#F6F6F6;
-  flex:0 50%;
-  border: 0.5px black solid;
-  border-radius: 10px;
-}
-.figure3{
-  flex:0 50%;
-  background: #F6F6F6;
-  border: 0.5px black solid;
-  border-radius: 10px;
-}
-.figure4{
-  background:#F6F6F6;
-  flex:0 50%;
-  border: 0.5px black solid;
-  border-radius: 10px;
-}
-@media screen and (max-width: 500px) {
-  .figure1, .figure2, .figure3, .figure4{
-    flex:0 100%;
-  }
-}
-  .product_list figure{
-  margin:3rem;
-  min-width:50%;
-}
-.product_list figcaption, .product_list a{
-  text-align: center;
 
-}
-.product_list span{
-  font-size: 1.2rem;
-}
-.product_list a{
-color: dodgerblue;
-font-family: helvetica;
-text-decoration: none;
-font-weight:bold;
-font-size: 3vw;
-}
-.product_list a:hover{
-  color: red;
-  text-decoration: underline;
-}
-.product_list a:active{
-  background-color: #1e90ff;
-  color: white;
-}
-figure a:hover{
-  color: red;
-  background-color: #1e90ff;
-
-  /* text-decoration: underline; */
-}
-
-/* style payment form */
-#text_input_payment{
-  max-width: 416px;
-  border: solid whitesmoke 2rem;
-  padding: 10px;
-  background-color:rgb(237, 237, 237);
-  border-radius: 20px;
-
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: space-around;
-  align-items:center;
-
-}
-@media screen and (max-width: 273px) {
-  .checkout {
-    width:100%;
-  }
-}
-#text_input_payment button{
-  font-size: 1rem;
-}
-#text_input_payment [type=text]{
-  width:100%;
-}
-/* #text_input_payment button{
-  margin-top: 2rem;
-  
-} */
-.pay_radio{
-  margin-bottom:2rem;
-}
-
-/* style checkout */
-.checkout{
-  border: solid whitesmoke 2rem;
-  border-radius: 20px;
-  background: #F6F6F6;
-
-  max-width:500px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: space-between;
-
-}
-@media screen and (max-width: 558px) {
-  .checkout {
-    width:100%;
-  }
-}
-
-.checkout_item1{
-  flex:1;
-  text-align: center;
-}
-.checkout_item2{
-  flex:1;
-  text-align: center;
-
-}
-.total_checkout{
-  flex:2;
-  
-  margin-top:5rem;
-}
-
-
-.checkout a{
-  color: dodgerblue;
-  font-family: helvetica;
-  text-decoration: none;
-  font-weight:bold;
-}
-.checkout img{
-  margin-top:1rem;
-}
-.checkout figcaption{
-  font-size: 2rem;
-
-}
-.checkout p{
-  /* padding:3em; */
-  font-size: 2rem;
-  border-top:solid white 10px
-
-}
-.checkout_button{
-
-  /* text-align: center; */
-  padding:3em;
-  font-size:1rem;
-  border-radius:10px;
-}
 
 .grey{
   color:#CACACA;
@@ -639,3 +377,4 @@ figure a:hover{
   align-items: flex-start;
   align-content:flex-start;
 }
+
