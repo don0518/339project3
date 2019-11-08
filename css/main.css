@@ -347,6 +347,10 @@ ol li::before {
   font-weight: bold;
 
 }
+
+.yellow{
+  color:rgb(255, 187, 0);
+}
 .color_names, .font_names{
   list-style-type: none;
 }

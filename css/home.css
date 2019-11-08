@@ -26,6 +26,7 @@ header{
     top: 0;
     align-items: center;
     padding: 15rem;
+    margin-bottom:0;
   }
 .content_box{
     display:flex;
@@ -56,3 +57,36 @@ a img:hover{
     transform: scale(1.1,1.1);
     transition: 0.2s;
 }
+
+.section-3 .text-wrapper span {
+    opacity: 0;
+    -webkit-transition: opacity 0.2s;
+}
+
+.section-3 .text-wrapper span.visible {
+    opacity: 1;
+}
+					
+.section-3 .text-wrapper {
+    max-width: 600px;
+    margin: auto;
+    font-size: 2em;
+    line-height: 1.5em;
+    margin-top: 4%;
+}
+
+.content_img{
+    margin-top: 3em;
+    
+}
+/* .pA_content{
+    position: relative;
+  
+    
+} */
+/* .project_content {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    width: 50%;
+  } */
