@@ -373,11 +373,13 @@ ol li::before {
   font-family: 'Alegreya Sans SC', sans-serif;
 }
 
-.final_checkout{
-  display:flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  align-content:flex-start;
-}
 
+
+a img{
+  width: 4em;
+
+}
+a img:hover{
+  transform: scale(1.1,1.1);
+  transition: 0.2s;
+}
