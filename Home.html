@@ -10,7 +10,11 @@
 
     <link href="css/main.css" rel="stylesheet">
     <link href="css/home.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="javascript/scrolling_effect.js"></script>
+
 
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700%7CEl+Messiri%7CMuli%7CRoboto%7CSource+Sans+Pro:300&display=swap"
         rel="stylesheet">
@@ -19,11 +23,12 @@
 
 <body>
     <header>
-        <a href="Home.html" id="logo">IAT 339</a>
+
+        <a href="Home.html" id="logo">Home</a>
         <nav class="header-right">
-            <a href="Home.html">Bio</a>
-            <a href="project_a.html">Project A</a>
-            <a href="project_b.html">Project B</a>
+            <a href="Home.html">Home</a>
+            <a href="project_a.html">Project: Citymapper</a>
+            <a href="project_b.html">Project: Container Brewing</a>
             <a href="Style_guide.html">Style Guide</a>
 
         </nav>
@@ -31,34 +36,36 @@
 
     <div class="body_elements">
         <div class="intro">
-            <h1>Dony Li</h1>
-            <p>UX, UI Designer</p>
+            <h1 class="animated fadeInUp">Dony Li</h1>
+            <p class="animated fadeInUp">UX, UI Designer</p>
         </div>
-        <div class="content_box">
+        <div class="content_box2 scroll-animations test content_scroll">
+            <div class="content_img">
+                <img class="profile_img" src="img/test.png" alt="test image">
+            </div>
             <div class="content">
+
                 <h2>Bio</h2>
                 <p> I am a third-year university student from School of Interactive Arts and Technology, SFU. I had
-                    experience with Graphic design, UX design, and UI design. Following the design principle and care
+                    experience with Graphic design, UX design, and UI design. Following the design principle and
+                    care
                     about user is my main goal as a designer. I always think about how the audience would see and
-                    interact to my design. I care about the details and consider the motion design of affordances to be
+                    interact to my design. I care about the details and consider the motion design of affordances
+                    to be
                     crucial in creating effective.
-
-
                 </p>
-            
+
             </div>
 
-            <div class="content_img">
-                <img src="img/test.png" alt="test image">
-            </div>
         </div>
 
         <div class="content_box">
 
-            <div class="content_img">
-                <img src="img/test.png" alt="test image">
+            <div class="content_img content_scroll">
+                <img src="img/project_a_1.png" alt="test image">
+
             </div>
-            <div class="content">
+            <div class="content content_scroll">
                 <h2>This is a Project A title</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -73,9 +80,11 @@
 
 
         <div class="content_box">
+            <div class="content_img content_scroll">
+                <img src="img/project_b_1.png" alt="test image">
+            </div>
 
-
-            <div class="content">
+            <div class="content content_scroll2">
                 <h2>This is a Project B title</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -88,19 +97,16 @@
 
             </div>
 
-            <div class="content_img">
-                <img src="img/test.png" alt="test image">
-            </div>
+
         </div>
     </div>
 
     <footer>
-        <section id="citations">
-            <div>Contact</div>
-            <div>Email: <a href="mailto:litel@sfu.ca" id="in_text_link">litel@sfu.ca</a></div>
-            <div><a href="Style_guide.html" id="in_text_link">Style Guide</a></div>
+        <div id="citations">
+            <div>Email: <a href="mailto:litel@sfu.ca" class="in_text_link">litel@sfu.ca</a></div>
+            <div><a href="Style_guide.html" class="in_text_link">Style Guide</a></div>
 
-        </section>
+        </div>
     </footer>
 
 

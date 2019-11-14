@@ -33,17 +33,16 @@ footer ul{
 }
 
 footer a {
-  color: dodgerblue;
+  color: #CACACA;
   font-family: helvetica;
   text-decoration: none;
-  font-weight:bold;
 }
 footer a:hover{
-  color: red;
+  color: black;
   text-decoration: underline;
 }
 footer a:focus{
-  background-color: dodgerblue;
+  background-color: black;
   color: white;
 }
 
@@ -189,18 +188,17 @@ code {
   INTERACTIVE ELEMENTS -------------------
 */
 /* style for in text link */
-#in_text_link {
-  color: dodgerblue;
+.in_text_link {
+  color: #CACACA;
   font-family: helvetica;
   text-decoration: none;
-  font-weight:bold;
 }
-#in_text_link:hover{
-  color: red;
+.in_text_link:hover{
+  color: black;
   text-decoration: underline;
 }
-#in_text_link:active{
-  background-color: dodgerblue;
+.in_text_link:active{
+  background-color: black;
   color: white;
 }
 /* style for navigation */
@@ -382,4 +380,13 @@ a img{
 a img:hover{
   transform: scale(1.1,1.1);
   transition: 0.2s;
+}
+
+#logo{
+  color: black;
+
+}
+#logo:hover {
+  color: rgb(79, 79, 79);
+
 }

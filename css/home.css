@@ -27,16 +27,22 @@ header{
     align-items: center;
     padding: 15rem;
     margin-bottom:0;
-  }
+}
 .content_box{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap:wrap;
 }
+.content_box2{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .content{
     position: relative;
-    width:50%;
+    width: 100%;
+    max-width: 800px;
     padding-left:3rem;
 }
 p{
@@ -49,14 +55,7 @@ h2{
 footer{
     margin-top: 5em;
 }
-a img{
-    width: 4em;
 
-}
-a img:hover{
-    transform: scale(1.1,1.1);
-    transition: 0.2s;
-}
 
 .section-3 .text-wrapper span {
     opacity: 0;
@@ -79,6 +78,8 @@ a img:hover{
     margin-top: 3em;
     
 }
+
+
 /* .pA_content{
     position: relative;
   
@@ -90,3 +91,96 @@ a img:hover{
     left: 16px;
     width: 50%;
   } */
+
+@media screen and (max-width: 651px) {
+
+.intro{
+    width: 100%;
+    background-color: rgb(255, 187, 0);
+    margin-bottom: 5px;
+    height: 100%;
+    position: relative;
+    top: 0;
+    align-items: center;
+    padding: 8rem;
+    margin-bottom:0;
+}
+
+.intro h1{
+    font-size: 30px;
+    padding:0rem;
+}
+
+/* .content{
+    position: relative;
+    width:80%;
+    padding-left:8rem
+} */
+}
+@media screen and (max-width: 772px) {
+    .content{
+        position: relative;
+        width: 100%;
+        max-width: 700px;
+        padding-right:3rem;
+        padding-left:3rem;
+    }
+}
+@media screen and (max-width: 375px) {
+    .intro{
+        width: 100%;
+        background-color: rgb(255, 187, 0);
+        margin-bottom: 5px;
+        height: 100%;
+        position: relative;
+        top: 0;
+        align-items: center;
+        padding: 5rem;
+        margin-bottom:0;
+    }
+
+    .content{
+        position: relative;
+        width: 100%;
+        max-width: 370px;
+        padding-left:12px;
+        padding-right:12px;
+
+    }
+}
+
+@media screen and (max-width: 584px) {
+    .content_box2{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap:wrap;
+
+    }
+    .profile_img{
+        padding-left:2rem;
+    }
+}
+
+.content_scroll {
+    opacity: 0;
+    transform: translate(0, 300px); 
+    transition: all 1.5s;
+}
+    
+.content_scroll.visible {
+    opacity: 1;
+    transform: translate(0, 0); 
+}
+
+.content_scroll2{
+    opacity: 0;
+    transform: translate(0, 12px); 
+
+    transition: all 1.5s;
+}
+
+.content_scroll2.visible2{
+    opacity: 1;
+    transform: translate(0, 0); 
+}
