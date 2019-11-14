@@ -39,11 +39,20 @@ header{
     flex-direction: row;
     justify-content: space-between;
 }
+
+.content_box3{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap:wrap;
+
+}
 .content{
     position: relative;
     width: 100%;
     max-width: 800px;
     padding-left:3rem;
+    padding-right:3rem;
 }
 p{
     color:grey;
@@ -165,7 +174,7 @@ footer{
 .content_scroll {
     opacity: 0;
     transform: translate(0, 300px); 
-    transition: all 1.5s;
+    transition: all 3s;
 }
     
 .content_scroll.visible {
@@ -175,12 +184,16 @@ footer{
 
 .content_scroll2{
     opacity: 0;
-    transform: translate(0, 12px); 
+    transform: translate(0, 150px); 
 
-    transition: all 1.5s;
+    transition: all 3s;
 }
 
 .content_scroll2.visible2{
     opacity: 1;
     transform: translate(0, 0); 
+}
+
+.content_box, .content_box2, .content_box3{
+    margin-bottom:8rem;
 }
