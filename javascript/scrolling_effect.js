@@ -1,4 +1,4 @@
-// Scroll function courtesy of Scott Dowding; http://stackoverflow.com/questions/487073/check-if-element-is-visible-after-scrolling
+// https://www.superhi.com/blog/how-to-add-web-design-elements-that-fade-in-and-out-on-scroll
 
 $(document).on("scroll", function () {
     var pageTop = $(document).scrollTop()
