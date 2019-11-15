@@ -45,7 +45,12 @@ footer a:focus{
   background-color: black;
   color: white;
 }
-
+#citations{
+  padding-top:2rem;
+}
+#citations div{
+  margin-top:5px;
+}
 footer li{
   margin-bottom:3rem;
   margin-top:1rem;
@@ -189,7 +194,7 @@ code {
 */
 /* style for in text link */
 .in_text_link {
-  color: #CACACA;
+  color: rgb(255, 187, 0);
   font-family: helvetica;
   text-decoration: none;
 }
@@ -224,7 +229,7 @@ code {
   color: black;
 }
 #nav_link a:active {
-  background-color: dodgerblue;
+  background-color: #CACACA;
   color: white;
 }
 /* Styling for the navigation button */

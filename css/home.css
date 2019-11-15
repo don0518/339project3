@@ -174,7 +174,7 @@ footer{
 .content_scroll {
     opacity: 0;
     transform: translate(0, 300px); 
-    transition: all 3s;
+    transition: all 1s;
 }
     
 .content_scroll.visible {
@@ -186,7 +186,7 @@ footer{
     opacity: 0;
     transform: translate(0, 150px); 
 
-    transition: all 3s;
+    transition: all 1s;
 }
 
 .content_scroll2.visible2{
