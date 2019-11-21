@@ -25,6 +25,7 @@ footer{
   /* background-color:#CACACA; */
   text-align:center;
   font-size:1rem;
+  margin-bottom:2em;
   
 }
 footer ul{
@@ -262,23 +263,23 @@ code {
 .headings h1, .headings h2, .headings h3, .headings h4{
   font-family: 'Source Sans Pro', sans-serif;
 }
-h1{
+h1, .heading1{
   font-size: 3rem;
   font-weight: 800;
 }
-h2{
+h2, .heading2{
   font-size: 2.5rem;
   font-weight: 600;
   margin-top: 0em;
 }
-h3{
+h3, .heading3{
   font-size: 2rem;
   font-weight: 400;
   color:black;
   text-decoration: none;
   margin-bottom: 0.5em;
 }
-h4{
+h4, .heading4{
   font-size: 1.5rem;
   font-weight: 200;
 }
@@ -395,4 +396,8 @@ a img:hover{
 #logo:hover {
   color: rgb(79, 79, 79);
 
+}
+
+.project_intro{
+  margin-top:1em;
 }
