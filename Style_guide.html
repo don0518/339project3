@@ -7,22 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Style Guide</title>
-
-    <link href="css/main.css" rel="stylesheet">
+    <!-- hamburger icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/main-dist.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700%7CEl+Messiri%7CMuli%7CRoboto%7CSource+Sans+Pro:300&display=swap"
         rel="stylesheet">
+        <script src = "javascript/hamburger.js"></script>
+
 
 </head>
 
 <body>
+
     <header>
+
         <a href="Home.html" id="logo">Dony Li</a>
-        <nav class="header-right">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+        <nav class="header-right" id="myTopnav">
             <a href="Home.html">Portfolio</a>
             <a href="#interactive_elements">Interactive Elements</a>
             <a href="#text_elements">Text Elements</a>
             <a href="#combined_elements">Combined Elements</a>
             <a href="#citations">Citations</a>
+
+         
         </nav>
     </header>
     <div class="body_elements">
@@ -74,15 +84,15 @@
 
         <!-- TEXT ELEMENTS SECTION // -->
         <section id="text_elements">
-            <h1>Text Elements</h1>
+            <div class="heading1">Text Elements</div>
 
             <section class="element">
                 <h2>Headings</h2>
                 <div class="headings">
-                    <div class = "heading1">This is a heading 1</div>
-                    <div class = "heading2">This is a heading 2</div>
-                    <div class = "heading3">This is a heading 3</div>
-                    <div class = "heading4">This is a heading 4</div>
+                    <div class="heading1">This is a heading 1</div>
+                    <div class="heading2">This is a heading 2</div>
+                    <div class="heading3">This is a heading 3</div>
+                    <div class="heading4">This is a heading 4</div>
                 </div>
                 <code>
           &#60;div class = "heading1"&#62;This is a heading 1&#60;/div&#62;<br>
@@ -191,15 +201,10 @@
     <footer>
         <section id="citations">
 
-            <h2>Citations</h2>
-
-            <ul>
-                <li>Matteson, Steve. Designer. 2011. <strong>Muli, Roboto, El Messiri, Source Sans Pro, Alegreya Sans
-                        SC</strong>.
-                    Retrieved from <a href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700%7CEl+Messiri%7CMuli%7CRoboto%7CSource+Sans+Pro:300&display=swap">https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700|El+Messiri|Muli|Roboto|Source+Sans+Pro:300&display=swap</a></li>
-
-            </ul>
-
+            <div>Email: <a href="mailto:litel@sfu.ca" class="in_text_link">litel@sfu.ca</a></div>
+            <div><a href="Style_guide.html" class="in_text_link">Style Guide</a></div>
+            <div><a href="https://github.com/don0518/339project3" class="in_text_link">GitHub</a></div>
+            <div><a href="reference.html" class="in_text_link">Reference</a></div>
         </section>
     </footer>
 

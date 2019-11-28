@@ -8,12 +8,15 @@
 
     <title>Portfolio: Citymapper</title>
 
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/home.css" rel="stylesheet">
+    <link href="css/main-dist.css" rel="stylesheet">
+    <link href="css/home-dist.css" rel="stylesheet">
+    <!-- hamburger icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700%7CEl+Messiri%7CMuli%7CRoboto%7CSource+Sans+Pro:300&display=swap"
         rel="stylesheet">
+    <script src="javascript/hamburger.js"></script>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -23,15 +26,20 @@
 </head>
 
 <body>
-    <header>
-        <a href="Home.html" id="logo">Dony Li</a>
-        <nav class="header-right">
-            <a href="Home.html">Home</a>
-            <a href="project_a.html" class="active_menu">Project: Citymapper</a>
-            <a href="project_b.html">Project: Container Brewing</a>
-            <a href="Style_guide.html">Style Guide</a>
 
-        </nav>
+    <header>
+        <div class="fix_nav">
+
+            <a href="Home.html" id="logo">Dony Li</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <nav class="header-right" id="myTopnav">
+                <a href="Home.html">Home</a>
+                <a href="project_a.html" class="active_menu">Project: Citymapper</a>
+                <a href="project_b.html">Project: Container Brewing</a>
+            </nav>
+        </div>
     </header>
 
     <div class="body_elements">
@@ -56,7 +64,7 @@
                         feature for it. Citymapper is transit and mapping app that helps users navigate around the city
                         and
                         guide them on transportation. Citymapper can be used on multiple platforms and is available for
-                        different major cities around the world.
+                        different major cities around the world. (team size: 3)
                     </p>
                     <h3>Project Type</h3>
                     <p>Academic project - case study</p>
@@ -74,11 +82,11 @@
         <div class="content_box2 content_scroll">
             <div class="content">
                 <h2>Stage 1</h2>
-                <p>This project begin with researching and understanding of the existing app: Citymapper.
-                    After we learned the interface inside and out, we interviewed multiple potential and primary
-                    users to do user-test and take notes on their experiences. In result, this way helped me to learn
-                    more
-                    about the application itself and to understand users' needs.
+                <p>
+                    This project begins with researching and understanding of the existing app: Citymapper. After we
+                    learned the current interface inside and out, we interviewed multiple potential and primary users
+                    to do user-test and take notes on the user journey map. As a result, this way helped me to learn
+                    more about the application itself and to understand users' needs.
                 </p>
             </div>
             <div class="content_img">
@@ -94,11 +102,11 @@
             <div class="content content_scroll">
                 <h2>Stage 2</h2>
 
-                <p>After stage 1's research, I brainstormed an AR camera navigation feature that help pedestrians
-                    navigate around cities by showing them digital street signs and
-                    virtual arrows overlaid on the sidewalk to show which way to walk. However, since the course is
-                    focusing on interface design, AR camera navigation feature is too simple for the course
-                    requirenment.
+                <p>After stage 1's research, I brainstormed an AR camera navigation feature that helps pedestrians
+                    navigate around cities by showing them digital street signs and virtual arrows overlaid on the
+                    sidewalk to show which way to walk. However, we realized the feature is too simple to be
+                    implemented into the app and it did not satisfy users' needs. Therefore, we integrate the intention
+                    of AR features with other ideas into a new feature: weather feature.
                 </p>
 
             </div>
@@ -108,15 +116,18 @@
 
             <div class="content_img content_scroll">
                 <img src="img/citymapper_route1.png" alt="four iphone wireframes image contains the ar feature in the citymapper's app">
+                <img src="img/citymapper_route2.png" alt="four iphone wireframes image contains the ar feature in the citymapper's app">
 
             </div>
             <div class="content content_scroll">
-                <h2>Stage 3</h2>
-                <p>After more researches, we decide to create a new feature, a weather feature.
+                <h2>Stage 3a</h2>
+                <p>
                     The main aspect of the weather feature that serves the most important function is showing the user
                     alternative sheltered routes. Not only will users be able to select and plan their quickest route
-                    to their destinations, they can now find the quickest sheltered alternative to aid their travels
-                    when unexpected rain or snow hits during the day.
+                    to their destinations, but they can also find the quickest sheltered alternative to guide their
+                    travels when unexpected rain or snow hits during the day. Users can select the quickest/sheltered
+                    route during different weather conditions by simply pressing on buttons. We give users freedom
+                    based on their selections and not affecting their experiences.
                 </p>
 
             </div>
@@ -124,15 +135,24 @@
 
             <div class="content_img content_scroll">
 
-                <img src="img/citymapper_route2.png" alt="four iphone wireframes image contains the ar feature in the citymapper's app">
+                <img src="img/citymapper_route3.png" alt="four iphone wireframes image contains the ar feature in the citymapper's app">
             </div>
 
             <div class="content content_scroll">
 
-                <h3>Select Quickest/Sheltered Route</h3>
-                <p>User can select the quickest/sheltered route during differernt weather conditions by simply pressing
-                    on buttons. We give users freedom based on their selections and not affecting their experiences.
-                    The feature also connect to other existing features in the app, such as notification.
+                <h2>Stage 3b</h2>
+                <p>
+                    After deciding on pursuing a weather alert feature, the team separated to do mockups for 1) Feature
+                    Onboarding 2) Selecting Sheltered Route 3) Viewing Weather Forecasting Information 4) Set
+                    Notifications 5) iPhone Widgets. 6) Tool tips<br>
+                    I was in charge of making mockups for Set Notifications, iPhone Widgets, and Tool tips. Since the design needs to
+                    follow with the existing interface, I used Adobe Photoshop and Illustrator to refine the interface
+                    with a consistent look. The problem that I encountered was the iPhone Widgets needs to present a
+                    strong hierarchy for users to notice the change in weather. Therefore I used strong colour contrast
+                    and icons to catch users' attention.
+
+
+
                 </p>
             </div>
 
@@ -143,18 +163,18 @@
 
 
             <div class="content">
-                <h2>Final Reflection</h2>
+                <h2>Self Reflection</h2>
                 <p>The result of the project went good. However, according to the feedback from the professor, we did
                     not implement the weather feature fully with user freedom. By saying that, the feature does not
-                    have
-                    automatic notification feature when there is weather changes. In the future, I will be looking for
-                    more userbility test before the final mockup.
+                    have an automatic notification feature when there are weather changes. The project developed my
+                    problem-solving skills and critical thinking skill. In the future, I will be looking for more
+                    usability tests and integrate these data into the project fully.
                 </p>
 
             </div>
 
             <div class="content_img">
-                <img src="img/test.png" alt="test image">
+                <img src="img/test.png" alt="a self illustrate image">
             </div>
         </div>
     </div>
@@ -164,7 +184,7 @@
             <div>Email: <a href="mailto:litel@sfu.ca" class="in_text_link">litel@sfu.ca</a></div>
             <div><a href="Style_guide.html" class="in_text_link">Style Guide</a></div>
             <div><a href="https://github.com/don0518/339project3" class="in_text_link">GitHub</a></div>
-
+            <div><a href="reference.html" class="in_text_link">Reference</a></div>
         </div>
     </footer>
 

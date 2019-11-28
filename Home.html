@@ -7,14 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Portfolio: Home</title>
-
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/home.css" rel="stylesheet">
+    <!-- hamburger icon -->
+    <!-- https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/main-dist.css" rel="stylesheet">
+    <link href="css/home-dist.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="javascript/scrolling_effect.js"></script>
-
+    <script src="javascript/hamburger.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700%7CEl+Messiri%7CMuli%7CRoboto%7CSource+Sans+Pro:300&display=swap"
         rel="stylesheet">
@@ -23,14 +25,19 @@
 
 <body>
     <header>
+        <div class="fix_nav">
+            <nav class="header-right" id="myTopnav">
+                <a href="Home.html" class="active_menu">Home</a>
+                <a href="project_a.html">Project: Citymapper</a>
+                <a href="project_b.html">Project: Container Brewing</a>
 
-        <nav class="header-right">
-           <a href="Home.html" class = "active_menu">Home</a>
-            <a href="project_a.html">Project: Citymapper</a>
-            <a href="project_b.html">Project: Container Brewing</a>
-            <a href="Style_guide.html">Style Guide</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
 
-        </nav>
+            </nav>
+
+        </div>
     </header>
 
     <div class="body_elements">
@@ -40,18 +47,17 @@
         </div>
         <div class="content_box2 scroll-animations content_scroll">
             <div class="content_img">
-                <img class="profile_img" src="img/test.png" alt="test image">
+                <img class="profile_img" src="img/test.png" alt="a self illustrate image">
             </div>
             <div class="content">
 
                 <h2>Bio</h2>
-                <p> I am a third-year university student from School of Interactive Arts and Technology, SFU. I had
-                    experience with Graphic design, UX design, and UI design. Following the design principle and
-                    care
-                    about user is my main goal as a designer. I always think about how the audience would see and
-                    interact to my design. I care about the details and consider the motion design of affordances
-                    to be
-                    crucial in creating effective.
+                <p> I am a third-year undergraduate student from School of Interactive Arts and Technology,
+                    concentrating studies on Design and Media Arts. The experience of being a Junior UX and UI designer
+                    allows me to develop
+                    critical thinking and design principles.
+                    I always think about how the audience would see and interact with my design. Moreover, I care about
+                    the details and consider the design of affordances to be crucial in creating effective.
                 </p>
 
             </div>
@@ -62,16 +68,16 @@
 
             <div class="content_img content_scroll">
                 <img src="img/project_a_1.png" alt="an iphone prototype templates of citymapper project">
-
             </div>
             <div class="content content_scroll">
                 <h2> <a href="project_a.html" class="in_text_link">
                         UX, UI, and Interaction Design </a></h2>
 
-                <p>For this project, I worked with an existing mobile application, Citymapper, and designed a new
-                    feature for it. Citymapper is transit and mapping app that helps users navigate around the city and
-                    guide them on transportation. Citymapper can be used on multiple platforms and is available for
-                    different major cities around the world.
+                <p>The existing mobile application, Citymapper is a transit and mapping app that helps users navigate
+                    around the city and
+                    guide them on transportation. The project studies all existing features of Citymapper and
+                    implements a new weather feature that allows users to experience their journey in a safe and aware
+                    way.
                 </p>
                 <a class="arrow_icon" href="project_a.html"> <img src="img/arrow.png" alt="arrow icon to next page"></a>
 
@@ -81,7 +87,7 @@
 
         <div class="content_box">
             <div class="content_img content_scroll">
-                <img src="img/project_b_1.png" alt="test image">
+                <img src="img/project_b_1.png" alt="a responsive website template in different devices">
             </div>
 
             <div class="content content_scroll2">
@@ -89,8 +95,8 @@
                         Responsive Website Design </a>
                 </h2>
                 <p>For this project, I worked with a company‘s website, Container Brewing. Container Brewing is a
-                    fictitious company that produce high-end beers. During the project, we developed the intended user,
-                    style guide, visual design, interactions, and responsive in multi platform for the website.
+                    fictitious company that produces high-end beers. During the project, I developed the visual design,
+                    interaction cues, and responsive in the multi-platform for the website.
                 </p>
                 <a class="arrow_icon" href="project_b.html"> <img src="img/arrow.png" alt="arrow icon to next page"></a>
 
@@ -106,6 +112,7 @@
             <div>Email: <a href="mailto:litel@sfu.ca" class="in_text_link">litel@sfu.ca</a></div>
             <div><a href="Style_guide.html" class="in_text_link">Style Guide</a></div>
             <div><a href="https://github.com/don0518/339project3" class="in_text_link">GitHub</a></div>
+            <div><a href="reference.html" class="in_text_link">Reference</a></div>
 
         </div>
     </footer>

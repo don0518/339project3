@@ -8,12 +8,16 @@
 
     <title>Portfolio: Container Brewing</title>
 
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/home.css" rel="stylesheet">
+    <link href="css/main-dist.css" rel="stylesheet">
+    <link href="css/home-dist.css" rel="stylesheet">
+
+    <!-- hamburger icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700%7CEl+Messiri%7CMuli%7CRoboto%7CSource+Sans+Pro:300&display=swap"
         rel="stylesheet">
+    <script src="javascript/hamburger.js"></script>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -24,14 +28,21 @@
 
 <body>
     <header>
-        <a href="Home.html" id="logo">Dony Li</a>
-        <nav class="header-right">
-            <a href="Home.html">Home</a>
-            <a href="project_a.html">Project: Citymapper</a>
-            <a href="project_b.html" class="active_menu">Project: Container Brewing</a>
-            <a href="Style_guide.html">Style Guide</a>
+        <div class="fix_nav">
 
-        </nav>
+            <a href="Home.html" id="logo">Dony Li</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <nav class="header-right" id="myTopnav">
+                <a href="Home.html">Home</a>
+                <a href="project_a.html">Project: Citymapper</a>
+                <a href="project_b.html" class="active_menu">Project: Container Brewing</a>
+
+
+            </nav>
+
+        </div>
     </header>
 
     <div class="body_elements">
@@ -50,11 +61,13 @@
                 <div class="project_content content_scroll">
                     <h2>Project Context</h2>
 
-                    <p class="project_intro">For this project, we worked with a company‘s website, Container Brewing.
-                        Container Brewing is a
-                        fictitious company that produce high-end beers. During the project, we developed the intended
-                        user, style guide, visual design, interactions, and responsive in multi platform for the
-                        website.
+                    <p class="project_intro">For this project, I worked with a company‘s website, Container Brewing.
+                        Container Brewing is a fictitious company that produces high-end beers. During the project, I
+                        developed the visual design, interaction cues, and responsive in the multi-platform for the
+                        website. (team size: 2)
+                        <br>
+                        <a href="http://www.sfu.ca/~litel/iat339/P02_final/P02-Container%20Brewery%20Company/homepage.html"
+                            class="in_text_link">-Click Here To View Full Project-</a>
                     </p>
                     <h3>Project Type</h3>
                     <p>Academic project - Responsive Website Design</p>
@@ -78,10 +91,10 @@
             </div>
             <div class="content">
                 <h2>Stage 1</h2>
-                <p>Before making the webpage's style guide, we did research on the existing brands and their target
-                    audiences. We integrated themes of different brands and came out with our own brand: Container
-                    Brewing. After the research, we created the style guide that contains the main features and
-                    elements of the webpage.
+                <p>Before making the webpage's style guide, my role is to research the existing beer craft company and
+                    their target audiences. The research helped us to develop the theme of the website and what we need
+                    for it. We integrated the findings of different beer craft company and came out with our brand:
+                    Container Brewing. (Above picture shows the style guide's development of the website)
                 </p>
 
             </div>
@@ -94,9 +107,11 @@
             </div>
             <div class="content">
                 <h2>Stage 2</h2>
-                <p>Once we finished style guide, we begin to structure what we need for the webpage. As we came out
+                <p>Once we finished the style guide, we begin to structure what we need for the webpage. As we came out
                     with four different pages for the webpage, we begin to sketch different layout and implement them
-                    to the actual mockup by applying HTML and CSS.
+                    to the actual mockup by applying HTML and CSS. My role was to design the home, event, and product
+                    detail page. I follow visual looks from the style guide to make the interface consistent and I
+                    applied the flex-box property for the later responsive process.
                 </p>
 
             </div>
@@ -108,10 +123,11 @@
             </div>
             <div class="content">
                 <h2>Stage 3</h2>
-                <p>After we completed the structure and appearance of the webpage, we begin to add responsive for the
-                    webpage. The reason is that we want to focusing on the accessbility for all potential users, so
-                    they can access from different size of devices. We also focused on the user experience such as
-                    interaction cues, and affordances.
+                <p>After we completed the structure and appearance of the webpage, my role at this stage is to complete
+                    the responsiveness of all pages. I applied media queries and edit flexbox properties for different
+                    structures in different device sizes. The reason is that we want to focus on the accessibility for
+                    all potential users, so they can access from different sizes of devices. We also focused on user
+                    experiences such as interaction cues and affordances.
                 </p>
 
             </div>
@@ -121,17 +137,17 @@
 
 
             <div class="content">
-                <h2>Final Reflection</h2>
-                <p>At the end, the result went good that we received positive feedback from the instructor and one of
+                <h2>Self Reflection</h2>
+                <p>In the end, the result went good that we received positive feedback from the instructor and one of
                     the highest grade in the class. During the project, I experienced many technique issues and
-                    accessbility issues. However, the project pushed me to develop my problem solving skills which
-                    allows me to solve all these kind of issues.
+                    accessibility issues. However, the project pushed me to develop my problem-solving skills which
+                    allow me to solve all these kinds of issues by doing researches.
                 </p>
 
             </div>
 
             <div class="content_img">
-                <img src="img/test.png" alt="test image">
+                <img src="img/test.png" alt="a self illustrate image">
             </div>
         </div>
     </div>
@@ -141,6 +157,7 @@
             <div>Email: <a href="mailto:litel@sfu.ca" class="in_text_link">litel@sfu.ca</a></div>
             <div><a href="Style_guide.html" class="in_text_link">Style Guide</a></div>
             <div><a href="https://github.com/don0518/339project3" class="in_text_link">GitHub</a></div>
+            <div><a href="reference.html" class="in_text_link">Reference</a></div>
 
         </div>
     </footer>
